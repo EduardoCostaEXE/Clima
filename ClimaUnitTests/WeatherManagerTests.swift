@@ -14,8 +14,6 @@ final class WeatherManagerTests: XCTestCase {
     func testConditionName300() throws{
         let weatherManager = WeatherManager()
         weatherManager.fetchWeather(cityName: "London")
-
-        XCTAssertEqual("a", "a")
     }
 
 }
