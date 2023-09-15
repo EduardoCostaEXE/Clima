@@ -12,8 +12,9 @@ import XCTest
 final class WeatherModelTests: XCTestCase {
 
     func testConditionName200() throws{
-        let model = WeatherModel(conditionId: 200, cityName: "Paris", temperature: 20)
+        let model = WeatherModel(conditionId: 200, cityName: "Paris", temperature: 20.50)
 
+        print(model.temperatureString)
         XCTAssertEqual(model.conditionName, "cloud.bolt", "ok")
     }
 
